@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE database SYSTEM "http://db.apache.org/torque/dtd/database.dtd">
+<database name="jvmMonitoring">
+    <table name="metrics">
+        <column name="id" type="INTEGER" primaryKey="true" required="true" autoIncrement="true" />
+        <column name="metric" type="VARCHAR" size="100" required="true" />
+        <column name="longValue" type="BIGINT" required="false" />
+        <column name="doubleValue" type="FLOAT" required="false" />
+        <column name="dataType" type="VARCHAR" size="10" required="true" />
+        <column name="timestamp" type="BIGINT" required="true" />
+    </table>
+</database>
